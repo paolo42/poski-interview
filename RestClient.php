@@ -15,6 +15,12 @@ class RestClient implements RestClientInterface
         $this->configure($parameters);
     }
 
+    /**
+     * @param array $parameters
+     *
+     * The idea behind this method is: Configuration should happen in constructor, but extracted to a separate method
+     * We don't have the actual config here, so I at least created a dummy method for that.
+     */
     public function configure(array $parameters)
     {
     }
